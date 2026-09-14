@@ -1,0 +1,710 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@200;400;500;600;700&family=Uchen&display=swap');
+  
+	html,
+	body {
+		height: 100%;
+		text-align: center;
+	}
+			
+	h1{
+		text-align: center;
+		margin-top: -20px;
+		margin-bottom: 30px;
+	}
+	
+	
+	button{
+		border-radius: 3px;
+		text-align: center;
+    color:#000;
+	}
+	
+	.container {
+		padding: 0 50px 50px;
+	}
+	
+	.outputcontainer{
+	  margin: 20px auto 0;
+		max-width: 600px;
+		word-wrap:break-word;
+	}
+/*  劭祺打的*/
+  .outputcontainer2{
+	    margin: 20px auto 20px;
+		  width:48%;
+      max-width: 1800px;
+      min-width: 270px;
+		word-wrap: break-word;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	
+	li {
+		margin: 30px 5px 5px;
+		padding: 0 20px;
+		height: 60px;
+		line-height: 60px;
+		border-radius: 3px;
+		background: #136a8a;
+		color: #fff;
+		list-style: none;
+		display: inline-block;
+		text-align: center;
+		width: 280px;
+    font-size: 20px;
+    font-weight: 700;
+	}
+	
+	li.drag-sort-active {
+		background: transparent;
+		color: transparent;
+		border: 1px solid #4ca1af;
+	}
+	
+	span.drag-sort-active {
+		background: transparent;
+		color: transparent;
+	}
+		
+	#outputbox{
+		box-shadow: 2px 2px 5px #4D4D4D;
+		box-sizing: border-box;
+		width: 100%;
+/*  劭祺改的*/
+    position: relative;
+	}
+	
+	.enter{
+		font-size: 12px;
+		color: #383838;
+		margin-top: 5px;
+	}
+	
+	.move{
+		font-size: 17px;
+		color: #383838;
+		margin-top: -20px;
+		margin-bottom: 15px;
+	}
+	
+	#list{
+		max-width: 1800px;
+		padding: 15px 0;
+	}
+	
+	#list1,#list2,#list3,#list4{
+		margin-top: 0px;
+		margin-bottom: 15px;
+		border-radius: 50px;
+	}
+	
+/*
+	.box{
+		height: 98vh;
+		display: flex;
+		flex-direction: column;
+    align-items: center;
+		}
+*/
+	
+	.box:before{
+ 		content: '';
+    flex-grow: .5;
+	}
+	
+	.content{
+  		width: 400px;
+  		background: #ccc;
+	}
+	
+	.result{
+		display: inline-block;
+		margin: 0px 20px;
+	}
+	
+	#result{
+		width: 100%;
+		text-align: center;
+	}
+	
+	#result1,#result2,#result3,#result4{
+		width: 180px;
+	}
+	
+	#name1,#name2,#name3,#name4,#name5{
+		width: 180px;
+	}
+	
+	#btn1{
+		margin:  5px;
+	}
+	
+	.theme{
+		margin-top: 10px;
+		margin-bottom: 5px;
+		font-weight: 900;
+	}
+	
+	#end{
+		margin-top: 40px;
+	}
+	
+/*.row放在這邊會消失，所以註解掉移去html*/
+/*
+	.row{
+		margin-top: -25px;
+		background-image: url("image/img10.png");
+		background-size: 60%;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-position:center;
+	}
+	
+*/
+
+
+
+	#bigphoto{
+    width:100%;
+	}
+	
+	#photo{
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	#photo1,#photo2,#photo3,#photo4,#photo5,#photo6,#photo7,#photo8,#photo9{
+		cursor: pointer;
+		margin: 0.3%;
+	}
+	
+	#photo1:hover,#photo2:hover,#photo3:hover,#photo4:hover,#photo5:hover,#photo6:hover,#photo7:hover,#photo8:hover,#photo9:hover{
+		transform: scale(1.05);
+	}
+	
+
+
+
+ 
+  	#shi{
+/*    劭祺改的*/
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(34, 0, 0,0.8);
+    font-weight: 500;
+    position:absolute;
+    /* text-align: right; */
+/*    因為h1標籤有設 所以這裡改回0px避免定位影響*/
+    margin-top:0px;
+    margin-bottom: 0px;
+	} 
+  
+  
+/*  大的992以下 25px*/
+/*  992以上35*/
+  @media (min-width: 0px) {
+    .shi1{
+      font-size: 24px;
+      bottom:46px;
+      right:14px;
+    }
+		.shi2{
+      font-size: 24px;
+       top:8px;
+      left:14px;
+    }
+    .shi3{
+      font-size: 24px;
+       top:8px;
+      right:14px;
+    }
+		.shi4{
+      font-size: 24px;
+      bottom:46px;
+      left:14px;
+    }
+    .shi5{
+      font-size: 24px;
+      bottom:46px;
+      left: 0;
+      right: 0;
+    }
+    .shi6{
+      font-size: 24px;
+      top:8px;
+      left: 0;
+      right: 0;
+    }
+	}
+  
+  @media (min-width: 992px) {
+    .shi1{
+      font-size: 35px;
+      bottom:73px;
+      right:24px;
+    }
+		.shi2{
+      font-size: 35px;
+      top:13px;
+      left:24px;
+    }
+		.shi3{
+      font-size: 35px;
+      top:13px;
+      right:24px;
+    }
+		.shi4{
+      font-size: 35px;
+      bottom:73px;
+      left:24px;
+    }
+    .shi5{
+      font-size: 35px;
+      bottom:73px;
+      left: 0;
+      right: 0;
+    }
+    .shi6{
+      font-size: 35px;
+      top:13px;
+      left: 0;
+      right: 0;
+    }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+ 	#title{
+/*    劭祺改的*/
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(34, 0, 0, 0.8);
+    font-weight: 500;
+    position:absolute;
+    /* text-align: right; */
+	} 
+  
+  
+/*  大的992以下 18px*/
+/*  992以上28*/
+  @media (min-width: 0px) {
+    .title1{
+      font-size: 16px;
+      bottom:16px;
+      right:14px;
+    }
+    .title2{
+      font-size: 16px;
+      top:40px;
+      left:14px;
+    }
+    .title3{
+      font-size: 16px;
+      top:40px;
+      right:14px;
+    }
+    .title4{
+      font-size: 16px;
+      bottom:16px;
+      left:14px;
+    }
+    .title5{
+      font-size: 16px;
+      bottom:16px;
+      left: 0;
+      right: 0;
+    }
+    .title6{
+      font-size: 16px;
+      top:40px;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .title1{
+      font-size: 28px;
+      bottom:32px;
+      right:24px;
+    }
+    .title2{
+      font-size: 28px;
+      top:55px;
+      left:24px;
+    }
+    .title3{
+      font-size: 28px;;
+      top:55px;
+      right:24px;
+    }
+    .title4{
+      font-size: 28px;
+      bottom:32px;
+      left:24px;
+    }
+    .title5{
+      font-size: 28px;
+      bottom:32px;
+      left: 0;
+      right: 0;
+    }
+    .title6{
+      font-size: 28px;
+      top:55px;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  
+  
+  
+  
+  
+  
+  /*  小的992以下 px*/
+/*  992以上10*/
+	#signature{
+/*    劭祺改的*/
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(34, 0, 0,0.8);
+    font-weight: 500;
+    /* margin-top:9px; */
+    margin-top: 0;
+    margin-bottom:0px;
+    position:absolute;
+    /* text-align: right; */
+	}
+	
+  
+  @media (min-width: 0px) {
+    .signature1{
+      font-size: 9px;
+      transform: scale(0.7);
+      bottom:8px;
+      right:5px;
+    }
+    .signature2{
+      font-size: 9px;
+      transform: scale(0.7);
+      top:59px;
+      left:5px;
+    }
+    .signature3{
+      font-size: 9px;
+      transform: scale(0.7);
+      top:59px;
+      right:5px;
+    }
+    .signature4{
+      font-size: 9px;
+      transform: scale(0.7);
+      bottom:8px;
+      left:5px;
+    }
+    .signature5{
+      font-size: 9px;
+      transform: scale(0.7);
+      bottom:8px;
+      left: 0;
+      right: 0;
+    }
+    .signature6{
+      font-size: 9px;
+      transform: scale(0.7);
+      top:59px;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .signature1{
+      font-size: 13px;
+      transform: scale(1);
+      bottom:18px;
+      right:26px;
+    }
+    .signature2{
+      font-size: 13px;
+      transform: scale(1);
+      top:90px;
+      left:26px;
+    }
+    .signature3{
+      font-size: 13px;
+      transform: scale(1);
+      top:90px;
+      right:26px;
+    }
+    .signature4{
+      font-size: 13px;
+      transform: scale(1);
+      bottom:18px;
+      left:26px;
+    }
+    /* 5 6 是加來當置中的! */
+    .signature5{
+      font-size: 13px;
+      transform: scale(1);
+      bottom:18px;
+      left: 0;
+      right: 0;
+    }
+    .signature6{
+      font-size: 13px;
+      transform: scale(1);
+      top:90px;
+      left: 0;
+      right: 0;
+    }
+  }
+	
+	.sheji{
+		display: inline-block;
+		position: relative;
+		top: 65px;
+		margin-left: 10px;
+	}
+  
+  @media(min-width:0px){
+    .sheji{
+      top: 0px;
+      margin-left: 0px;
+    }
+  }
+    @media(min-width:544px){
+    .sheji{
+      top: 100px;
+      margin-left: 0px;
+    }
+  }
+	@media(min-width:768px){
+    .sheji{
+      top: 100px;
+      margin-left: 25px;
+    }
+  }
+	.shangxiazuiyou{
+		font-weight: 700;
+		margin: 0 5px;
+		background-color: #FFFFFF;
+		border-radius: 20px;
+		border: #FFFFFF;
+		box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.5);
+	}
+	.changeFont{
+    width:50px;
+    display:inline-block;
+    cursor:pointer;
+		font-weight: 700;
+		margin: 0 5px;
+		background-color: #FFFFFF;
+		border-radius: 50px;
+		border: #FFFFFF;
+		box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.5);
+  }
+	#wenzi{
+		font-weight: 700;
+		margin: 5px;
+	}
+
+  #btn_APlus,#btn_AMinus,#btn_tL,#btn_tR,#btn_bL,#btn_br,#btn_bC,#btn_tC{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    /* text-align: center; */
+    text-align: -webkit-center;
+    padding:0px;
+  }
+  #btn_chgFont{
+    width: 38px;
+    height: 38px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 1px;
+    margin-left:7.5px;
+    margin-right: 7.5px;
+  }
+
+	#btn1,#btn2,#btn3,#btn4,#btn5,#btn6{
+		padding: 5.5px 18px;
+		border-radius: 20px;
+		font-weight: 700;
+		background-color: #FFFFFF;
+		border: #FFFFFF;
+		box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.5);
+	}
+
+  #btn5,#btn6{
+    padding: 8px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50px; 
+  }
+  #btn6{margin-right:8px;}
+  
+
+	#btn1:hover,#btn2:hover,#btn3:hover,#btn4:hover,#btn5:hover,#btn6:hover,#btn_tL:hover,#btn_tR:hover,#btn_bL:hover,#btn_br:hover,#btn_bC:hover,#btn_tC:hover,#btn_chgFont:hover,#btn_APlus:hover,#btn_AMinus:hover{
+		color: #DAAE16;
+		box-shadow: 0px 0px 5px 3px #DAAE16;
+	}
+	
+	input{
+		border-radius: 50px;
+    width:180px;
+    height:40px;
+    margin: 8px;
+		background-color: rgba(255,255,255,0.7);
+		text-align: center;
+ 		text-shadow: 0px 0px 10px #FFF;
+	}
+	
+	h1{
+		font-weight: 700;
+	}
+	
+	#t3{
+		margin: 50px 0 0;
+	}
+	
+	
+  
+  @media(min-width:0px){
+    .space{
+/*        height: 10px;*/
+      height: 20px;
+    }
+  }
+  @media(min-width:537px){
+    .space{
+        height: 20px;
+    }
+  }
+
+
+
+	.tuwen{
+		margin:auto;
+	}
+	
+  
+  
+  
+  
+  
+.banner{
+  width: 100%;
+  height: 115vh;
+  position: relative;
+  overflow: hidden;
+/*
+  display: flex;
+  justify-content: center;
+  align-items:center;
+*/
+  background-image: linear-gradient(transparent 70%, #fff);
+}
+/*
+.banner video{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  object-fit: cover;
+  z-index: -1;
+}
+*/
+.banner img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  object-fit: cover;
+  z-index: -1;
+}
+.banner h2{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  line-height:35vh;
+   /* 字全大寫 */
+  text-transform:uppercase;
+/*  background-color: #fff;*/
+  color:#fff;
+  mix-blend-mode: screen;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  font-weight: 900;
+  font-family: 'Noto Sans TC', sans-serif;
+  text-shadow: 0px 0px 30px rgba(0,80,140,0.6);
+  font-size: 13vw;
+  text-align: left;
+  padding-left: 17vw;
+  padding-top: 4vw;
+}
+  span{
+    display: block;
+    text-align: right;
+    padding-right:21vw;
+    font-size: 15vw;
+  }
+  @media (min-width: 0px) {
+    .banner h2{
+      line-height:15vh;
+      padding-top: 50vw;
+    }
+  }
+   @media (min-width: 570px) {
+    .banner h2{
+      line-height:35vh;
+      padding-top: 4vw;
+    }
+  }
+
+
+.linear1{
+    height:5vw;
+    min-height:50px;
+    background-image:linear-gradient(#fff 0%,transparent 100%);
+}
+.linear2{
+    height:3vw;
+    min-height:50px;
+    background-image:linear-gradient(transparent 0%,#fff 100%);
+}
+
+/*footer*/
+.bg-lb{
+  background-color: rgba(0,80,140,0.6);
+}

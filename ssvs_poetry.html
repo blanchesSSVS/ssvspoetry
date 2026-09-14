@@ -1,0 +1,974 @@
+
+<!DOCTYPE html>
+
+<html>
+	
+<head>
+	
+<meta charset="utf-8">
+	
+<meta name="viewport" content="width=device-width">
+	
+<title>文創松商地景詩</title>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+		
+	<script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+/*    放在css檔案裡會背景圖消失 所以移過來*/
+    .row{
+		margin-top: -25px;
+		background-image: url("image/img10.png");
+		background-size: 60%;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-position:center;
+	}
+  
+  </style>
+</head>
+	
+<body>
+  
+  
+  <div class="wrap">
+    <div class="banner">
+      <img style="width:100%;" src="image/img5.jpg" alt="">
+<!--
+      <video id="video" autoplay muted loop playsline>
+        <source src="image/3.mp4" type="video/mp4">
+      </video>
+-->
+      <a href="#page1"><h2>文創松商<span>地景詩</span></h2></a>
+    </div>
+  </div>
+  
+	
+<div class="container">
+
+<!--  <h1>海洋之子愛玩詩</h1>-->
+  <div class="linear1"></div>
+     
+    <div id="page1" class="row">
+      <div class="linear1"></div>
+      <div class="col-lg-3 col-md-6 col-12">
+
+<!--        <p class="theme">海洋籤筒</p>-->
+        
+        <input type="text"  value="" id="text1_1" maxlength="3">
+        <input type="text"  value="" id="text1_2" maxlength="3">
+        <input type="text"  value="" id="text1_3" maxlength="3">
+        <input type="text"  value="" id="text1_4" maxlength="3">
+        <input type="text"  value="" id="text1_5" maxlength="3">	
+
+        <p class="enter">填寫具象名詞▲</p>
+
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+
+<!--        <p class="theme">沙灘籤筒</p>-->
+        
+        <input type="text" value="" id="text2_1" maxlength="3">
+        <input type="text" value="" id="text2_2" maxlength="3">
+        <input type="text" value="" id="text2_3" maxlength="3">
+        <input type="text" value="" id="text2_4" maxlength="3">
+        <input type="text" value="" id="text2_5" maxlength="3">
+
+        <p class="enter">填寫動詞▲</p>
+
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+
+<!--        <p class="theme">天空籤筒</p>-->
+        <input type="text" value="" id="text3_1" maxlength="4">
+        <input type="text" value="" id="text3_2" maxlength="4">
+        <input type="text" value="" id="text3_3" maxlength="4">
+        <input type="text" value="" id="text3_4" maxlength="4">
+        <input type="text" value="" id="text3_5" maxlength="4">
+
+        <p class="enter">填寫形容詞▲</p>
+
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+
+<!--        <p class="theme">漁村籤筒</p>-->
+
+        <input type="text" value="" id="text4_1" maxlength="3">
+        <input type="text" value="" id="text4_2" maxlength="3">
+        <input type="text" value="" id="text4_3" maxlength="3">
+        <input type="text" value="" id="text4_4" maxlength="3">
+        <input type="text" value="" id="text4_5" maxlength="3">
+
+        <p class="enter">填寫抽象名詞▲</p>
+
+      </div>
+
+      <a href="#page2"><button id="btn1">抽取詩詞</button></a>
+      <p></p>
+      <div class="linear2"></div>
+  </div>
+
+  
+  
+  <div id="page2"></div>
+
+  <div class="box">
+
+    <img src="image/img11.png" alt="" width="63%">
+
+    <div class="col-lg-3 col-md-6 col-12" id="result">
+
+      <p></p>
+
+      <h1 id="t0">獲取籤詩內容</h1>
+
+      <div class="result"><input type="text" id="result1" maxlength="3">
+      <p class="enter">修改具象名詞▲</p></div>
+      <div class="result"><input type="text" id="result2" maxlength="3">
+      <p class="enter">修改動詞▲</p></div>
+      <p class="d-xl-none d-lg-block d-none"></p>
+      <div class="result"><input type="text" id="result3" maxlength="4">
+      <p class="enter">修改形容詞▲</p></div>
+      <div class="result"><input type="text" id="result4" maxlength="3">
+      <p class="enter">修改抽象名詞▲</p></div>
+
+    </div>
+
+    <a href="#page3"><button id="btn2">現代詩人誕生</button></a>
+		<p></p>
+
+  </div>
+
+  <div id="page3"></div>
+
+  <div class="box">
+
+    <img src="image/img12.png" alt="" width="30%">
+
+    <div class="outputcontainer" id="list">
+
+      <h1 id="t1">獨家個性金句</h1>
+
+      <p class="move">自由移動換位▼</p>
+
+      <ul class="drag-sort-enable">
+        <li id="list1" class="list"></li>
+        <li id="list2" class="list"></li>
+        <li id="list3" class="list"></li>
+        <li id="list4" class="list"></li>
+      </ul>
+
+    </div>
+
+    <a href="#page4"><button id="btn3">現代詩人屬名</button></a>
+		<p></p>
+
+  </div>
+
+  <div id="page4"></div>
+
+  <div class="box">
+
+    <img src="image/img13.png" alt="" width="43%">
+
+    <p></p>
+		<p></p>
+		
+    <h1 id="t2">著作獨一無二</h1>
+
+    <div>
+
+      <div class="name">
+
+        <div class="result"><input type="text" id="name1" maxlength="4">
+        <p class="enter">填寫作者▲</p></div>
+        <div class="result"><input type="text" id="name3" maxlength="5">
+        <p class="enter">詩名▲</p></div>
+
+      </div>
+
+    </div>
+
+    <a href="#page5"><button id="btn4">一流名作誕生</button></a>
+		<p></p>
+
+  </div>
+
+  <div id="page5"></div>
+
+  <div class="box">
+
+    <h1 id="t3">世界級名作</h1>
+
+		<div class="tuwen">
+		
+    <div class="outputcontainer2" id="end">
+
+      <div id="outputbox" onclick="block_capture()">
+          <img id="bigphoto" src="image/img1.jpg" width="75%" alt=""/>
+            <h1 id="shi" class="shi1"></h1>
+            <h3 id="title" class="title1"></h3>
+            <p id="signature" class="signature1"></p>
+      </div>
+
+    </div>
+			
+		<div class="sheji">
+		
+		<div>
+
+    <div class="space"></div>	
+		<p class="move">明信片設定▼</p>
+    
+    
+
+		<button onclick="text_tL()" class="shangxiazuiyou" id="btn_tL">↖</button>
+		<button onclick="text_bC()" class="shangxiazuiyou" id="btn_bC">↑</button>
+		<button onclick="text_tR()" class="shangxiazuiyou" id="btn_tR">↗</button>
+    
+    <p></p>
+    <div class="d-flex align-items-center">
+		<button onclick="fsPlus()" class="shangxiazuiyou" id="btn_APlus">A+</button>
+    <div onclick="chgFont()" onmouseover="chgFontMouseover()" onmouseout="chgFontMouseout()" class="changeFont" id="btn_chgFont"><img id="fontImg" src="image/ming.svg" alt=""></div>
+		<button onclick="fsMinus()" class="shangxiazuiyou" id="btn_AMinus">A-</button>
+    </div>  
+
+		<p></p>
+		<button onclick="text_bL()" class="shangxiazuiyou" id="btn_bL">↙</button>
+		<button onclick="text_tC()" class="shangxiazuiyou" id="btn_tC">↓</button>
+		<button onclick="text_bR()" class="shangxiazuiyou" id="btn_br">↘</button>
+    
+
+    
+		
+		</div>
+			
+    <div class="space"></div>	
+    
+    <div onclick="add_wBorder()"  onmouseover="borderMouseover()" onmouseout="borderMouseout()"  class="changeFont" id="btn6"><img id="picImg" src="image/addWBorder.svg" alt="新增白框"></div>
+    <div onclick="block_capture()" onmouseover="saveMouseover();" onmouseout="saveMouseout()" class="changeFont" id="btn5"><img id="saveImg" src="image/save.svg" alt="保存圖片"></div>
+
+		
+		</div>
+		
+		</div>
+
+
+    <!-- <p class="d-xl-none d-lg-block d-none"></p>	 -->
+    <div id="photo">
+      <img id="photo1" src="image/img1.jpg" alt="" style="width:9%; margin-top:5px;"/>
+      <img id="photo2" src="image/img2.jpg" alt="" style="width:9%; margin-top:5px;"/>
+      <img id="photo3" src="image/img3.jpg" alt="" style="width:9%; margin-top:5px;"/>
+      <img id="photo4" src="image/img4.jpg" alt="" style="width:9%; margin-top:5px;"/> 
+      <img id="photo5" src="image/img5.jpg" alt="" style="width:9%; margin-top:5px;"/> 
+      <img id="photo6" src="image/img6.jpg" alt="" style="width:9%; margin-top:5px;"/>
+      <img id="photo7" src="image/img7.jpg" alt="" style="width:9%; margin-top:5px;"/>
+      <img id="photo8" src="image/img8.jpg" alt="" style="width:9%; margin-top:5px;"/>
+      <img id="photo9" src="image/img9.jpg" alt="" style="width:9%; margin-top:5px;"/> 
+    </div>
+
+  	<p></p>
+		
+		
+		
+  </div>
+
+</div>
+  
+  <div class="bg-lb">
+    <footer class="container pb-0">
+      <div class="row align-items-center align-content-center justify-content-around p-4 text-white text-center">
+          <p class="col-md-4 col-12 mb-1">教案設計：許秀美、張美雀</p>
+          <p class="col-md-4 col-12 mb-1">照片攝影：邱逸民</p>
+          <p class="col-md-4 col-12 mb-1">網頁製作：王劭祺、張雅淇</p>
+      </div>
+    </footer>
+  </div>
+	
+<script>
+	
+	var btn1=document.getElementById("btn1");
+	var btn2=document.getElementById("btn2");
+	var btn3=document.getElementById("btn3");
+	var btn4=document.getElementById("btn4");
+	
+	var bigphoto=document.getElementById("bigphoto");
+	var photo1=document.getElementById("photo1");
+	var photo2=document.getElementById("photo2");
+	var photo3=document.getElementById("photo3");
+	var photo4=document.getElementById("photo4");
+	var photo5=document.getElementById("photo5");
+	var photo6=document.getElementById("photo6");
+	var photo7=document.getElementById("photo7");
+	var photo8=document.getElementById("photo8");
+	var photo9=document.getElementById("photo9");
+	
+  
+	var t0=document.getElementById("t0");
+	btn1.addEventListener("click",check1);
+
+	
+  
+  //btn1的神奇解bug東東:3
+  btn1.addEventListener("click",check1);
+	function check1(){
+	var noWordCount1=0;
+		for(var i=1;i<=5;i++){
+			if(document.getElementById("text1_"+i).value===""){
+				noWordCount1++;
+			};
+		};
+		
+		for(var i=1;i<=5;i++){
+			if(document.getElementById("text2_"+i).value===""){
+				noWordCount1++;
+			};
+		};
+		
+		for(var i=1;i<=5;i++){
+			if(document.getElementById("text3_"+i).value===""){
+				noWordCount1++;
+			};
+		};
+    
+    for(var i=1;i<=5;i++){
+			if(document.getElementById("text4_"+i).value===""){
+				noWordCount1++;
+			};
+		};
+		
+		if(noWordCount1!=0){
+			t0.innerHTML="請往上滑填滿空格";
+			alert("請先填滿空格喔！");
+		}else if(noWordCount1===0){
+			t0.innerHTML="獲取籤詩內容";
+//			randomtext()直接改到下面去，不知道為甚麼用function第二次讀不到
+      for(i=1;i<5;i++){
+        for(j=1;j<6;j++){
+          document.getElementById("text"+i+"_"+j).style.color="#000000";
+          document.getElementById("text"+i+"_"+j).style.backgroundColor = "rgba(255,255,255,0.7)";
+        };
+      };
+      randomtext=[];
+      for(k=1;k<5;k++){
+        randomtext[k]=randomNumber(5)+1;
+        document.getElementById("text"+k+"_"+randomtext[k]).style.color="#FFFFFF";
+        document.getElementById("text"+k+"_"+randomtext[k]).style.backgroundColor="#000000";
+        document.getElementById("result"+k).value=document.getElementById("text"+k+"_"+randomtext[k]).value;
+      };
+
+    };
+		
+	};
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+	
+  //btn2解bug的
+  btn2.addEventListener("click",tian);
+  function tian(){
+    var noWordCount2=0;
+    for(var i=1; i<=4; i++){
+      if(document.getElementById("result"+i).value === ""){
+        noWordCount2++;
+      };
+    };
+    
+    if(noWordCount2 != 0){
+      t1.innerHTML="請往上滑填滿空格";
+      alert("請先填滿空格喔！");
+    }else if(noWordCount2 === 0){
+      t1.innerHTML="獨家個性金句";
+      for(k=1;k<5;k++){
+        //依序k=1 將上面result input裡的值  填到這裡的innerHTML
+        document.getElementById("list"+k).innerHTML=document.getElementById("result"+k).value;
+      }
+    }
+
+  };
+		
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  	btn3.addEventListener("click",showtext);
+    
+  
+  //btn4解bug加的
+  	btn4.addEventListener("click",check2);
+	function check2(){
+
+		if(name1.value===""){
+			if(name1.value === "" && name3.value === ""){
+        t3.innerHTML="請往上滑填寫作者及詩名";
+				alert("請先填寫作者及詩名喔！");
+      }else{
+				t3.innerHTML="請往上滑填寫詩名";
+				alert("請先填寫詩名喔！");
+			}
+		}else if(name3.value===""){
+        t3.innerHTML="請往上滑填寫詩名";
+				alert("請先填寫詩名喔！");
+    }else{
+      t3.innerHTML="世界級名作";
+      showtext2();
+    }
+
+	};
+	
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+	
+	photo1.addEventListener("click",a);
+
+	function a(){
+		bigphoto.src="image/img1.jpg";
+	}
+	
+	photo2.addEventListener("click",b);
+
+	function b(){
+		bigphoto.src="image/img2.jpg";
+	}
+	
+	photo3.addEventListener("click",c);
+
+	function c(){
+		bigphoto.src="image/img3.jpg";
+	}
+	
+	photo4.addEventListener("click",d);
+
+	function d(){
+		bigphoto.src="image/img4.jpg";
+	}
+	
+	photo5.addEventListener("click",e);
+
+	function e(){
+		bigphoto.src="image/img5.jpg";
+	}
+	
+	photo6.addEventListener("click",f);
+
+	function f(){
+		bigphoto.src="image/img6.jpg";
+	}
+	
+	photo7.addEventListener("click",g);
+
+	function g(){
+		bigphoto.src="image/img7.jpg";
+	}
+	
+	photo8.addEventListener("click",h);
+
+	function h(){
+		bigphoto.src="image/img8.jpg";
+	}
+	
+	photo9.addEventListener("click",i);
+
+	function i(){
+		bigphoto.src="image/img9.jpg";
+	}
+	
+	function randomNumber(limit){
+		return Math.floor(Math.random()*limit);
+	}
+	
+  
+  
+	function showtext(){
+    
+    var list = document.getElementsByClassName("list");
+    var noWordCount3=0;
+    for(var i=0; i<=3; i++){
+      if(list[i].innerText === ""){
+          noWordCount3++;
+      };
+    };
+    if(noWordCount3!=0){
+      t2.innerHTML="請先回到 獲取籤詩內容 填滿空格";
+      alert("請先回到 獲取籤詩內容 填滿空格喔！");
+    }else if(noWordCount3===0){
+      t2.innerHTML="著作獨一無二";
+      const sortableLists = document.getElementsByClassName("drag-sort-enable");
+		  document.getElementById("title").innerText=sortableLists[0].outerText;
+    };
+    
+	}	
+  
+	
+	function showtext2(){
+		
+		const name = document.getElementsByClassName("name");
+		shi.innerText=name3.value;
+		signature.innerText="作者："+name1.value;
+
+	}	
+	
+
+
+
+
+
+
+  //換字體
+
+  var fontHei = true;
+
+  function funFont(el,font){
+    el.style.fontFamily=font;
+  }
+
+  var ming = "'Noto Serif TC', serif";
+  var hei = "'Noto Sans TC', sans-serif";
+
+  function chgFont(){
+    if(fontHei == true){
+      funFont(shi,ming);
+      funFont(title,ming);
+      funFont(signature,ming);
+      fontHei = false;
+      shi.style.fontWeight = 600;
+      title.style.fontWeight = 600;
+    }else{
+      funFont(shi,hei);
+      funFont(title,hei);
+      funFont(signature,hei);
+      fontHei = true;
+      shi.style.fontWeight = 500;
+      title.style.fontWeight = 500;
+    }
+  }
+
+  document.getElementById("fontImg").addEventListener("click",chgImg);
+
+  function chgImg(){
+    if(fontHei == true){
+      document.getElementById("fontImg").src="image/hei.svg"
+    }else{
+      document.getElementById("fontImg").src="image/ming.svg"
+    }
+
+  }
+
+
+  //換圖片顏色
+  //字體
+  var fontImg = document.getElementById("fontImg");
+  function chgFontMouseover(){
+    if(fontHei == true){
+      fontImg.src='image/ming2.svg';
+    }else{
+      fontImg.src='image/hei2.svg';
+    }
+  }
+  function chgFontMouseout(){
+    if(fontHei == true){
+      fontImg.src='image/ming.svg';
+    }else{
+      fontImg.src='image/hei.svg';
+    }
+  }
+  
+  //存圖換顏色
+  var saveImg = document.getElementById("saveImg");
+  function saveMouseover(){
+    if(document.body.offsetWidth > 768){
+      saveImg.src='image/save2.svg';
+    }
+  }
+  function saveMouseout(){
+    if(document.body.offsetWidth > 768){
+      saveImg.src='image/save.svg';
+    }
+  }
+
+ 
+  // 字體加大
+  
+  var plus = 0;
+  var minus = 0;
+  
+  var shiFS, titleFS, signatureFS; 
+  if(document.body.offsetWidth > 992){
+    shiFS = 36;
+    titleFS = 28;
+    signatureFS = 13;
+  }
+  else if(document.body.offsetWidth > 0){
+    shiFS = 24;
+    titleFS = 16;
+    signatureFS = 9;
+    plus = 2;
+  }
+  function fsPlus(){
+    if(plus < 3){
+      plus++;
+      minus--;
+      shiFS = shiFS + 3;
+      shi.style.fontSize = shiFS + "px";
+      titleFS = titleFS + 1;
+      title.style.fontSize = titleFS + "px";
+      signatureFS = signatureFS + 3;
+      signature.style.fontSize = signatureFS + "px";
+    }
+  }
+  function fsMinus(){
+    if(minus < 1){
+      minus++;
+      plus--;
+      shiFS = shiFS - 3;
+      shi.style.fontSize = shiFS + "px";
+      titleFS = titleFS - 1;
+      title.style.fontSize = titleFS + "px";
+      signatureFS = signatureFS - 3;
+      signature.style.fontSize = signatureFS + "px";
+    }
+  }
+
+  //手機圖片換行
+  if(992 > document.body.offsetWidth > 0){
+      document.getElementById("photo1").style.width = "15%";
+      document.getElementById("photo2").style.width = "15%";
+      document.getElementById("photo3").style.width = "15%";
+      document.getElementById("photo4").style.width = "15%";
+      document.getElementById("photo5").style.width = "15%";
+      document.getElementById("photo6").style.width = "15%";
+      document.getElementById("photo7").style.width = "15%";
+      document.getElementById("photo8").style.width = "15%";
+      document.getElementById("photo9").style.width = "15%";
+    
+  }
+
+  
+  //白框
+  var border = 0;
+  var picImg = document.getElementById("picImg")
+  function add_wBorder(){
+    if(border === 0){
+      document.getElementById("outputbox").style.border = "#FFFFFF solid 8px";
+      picImg.src = "image/minusWBorder.svg";
+      border = 1;
+    }else{
+      document.getElementById("outputbox").style.border = "none";
+      picImg.src = "image/addWBorder.svg";
+      border = 0;
+    };
+  };
+  
+  function borderMouseover(){
+    if(border === 0){
+      picImg.src = "image/addWBorder2.svg";
+    }else{
+      picImg.src = "image/minusWBorder2.svg";
+    }
+  }
+  function borderMouseout(){
+    if(border === 0){
+      picImg.src='image/addWBorder.svg';
+    }else{
+      picImg.src='image/minusWBorder.svg';
+    }
+  }
+
+
+
+  //移動位置(換class)  
+  var signature = document.getElementById("signature");
+  var title = document.getElementById("title");
+  var shi =	document.getElementById("shi");
+  function text_bR(){
+    signature.classList.remove("signature2");
+    signature.classList.remove("signature3");
+    signature.classList.remove("signature4");
+    signature.classList.remove("signature5");
+    signature.classList.remove("signature6");
+    signature.classList.add("signature1");
+    
+    
+    title.classList.remove("title2");
+    title.classList.remove("title3");
+    title.classList.remove("title4");
+    title.classList.remove("title5");
+    title.classList.remove("title6");
+    title.classList.add("title1");
+		
+		shi.classList.remove("shi2");
+    shi.classList.remove("shi3");
+    shi.classList.remove("shi4");
+    shi.classList.remove("shi5");
+    shi.classList.remove("shi6");
+    shi.classList.add("shi1");
+  };
+  function text_tL(){
+    signature.classList.remove("signature1");
+    signature.classList.remove("signature3");
+    signature.classList.remove("signature4");
+    signature.classList.remove("signature5");
+    signature.classList.remove("signature6");
+    signature.classList.add("signature2");
+    
+    title.classList.remove("title1");
+    title.classList.remove("title3");
+    title.classList.remove("title4");
+    title.classList.remove("title5");
+    title.classList.remove("title6");
+    title.classList.add("title2");
+		
+		shi.classList.remove("shi1");
+    shi.classList.remove("shi3");
+    shi.classList.remove("shi4");
+    shi.classList.remove("shi5");
+    shi.classList.remove("shi6");
+    shi.classList.add("shi2");
+  };
+  function text_tR(){
+    signature.classList.remove("signature1");
+    signature.classList.remove("signature2");
+    signature.classList.remove("signature4");
+    signature.classList.remove("signature5");
+    signature.classList.remove("signature6");
+    signature.classList.add("signature3");
+    
+    title.classList.remove("title1");
+    title.classList.remove("title2");
+    title.classList.remove("title4");
+    title.classList.remove("title5");
+    title.classList.remove("title6");
+    title.classList.add("title3");
+		
+		shi.classList.remove("shi1");
+    shi.classList.remove("shi2");
+    shi.classList.remove("shi4");
+    shi.classList.remove("shi5");
+    shi.classList.remove("shi6");
+    shi.classList.add("shi3");
+  };
+  function text_bL(){
+    signature.classList.remove("signature1");
+    signature.classList.remove("signature2");
+    signature.classList.remove("signature3");
+    signature.classList.remove("signature5");
+    signature.classList.remove("signature6");
+    signature.classList.add("signature4");
+    
+    title.classList.remove("title1");
+    title.classList.remove("title2");
+    title.classList.remove("title3");
+    title.classList.remove("title5");
+    title.classList.remove("title6");
+    title.classList.add("title4");
+		
+		shi.classList.remove("shi1");
+    shi.classList.remove("shi2");
+    shi.classList.remove("shi3");
+    shi.classList.remove("shi5");
+    shi.classList.remove("shi6");
+    shi.classList.add("shi4");
+  };
+
+  function text_bC(){
+    signature.classList.remove("signature1");
+    signature.classList.remove("signature2");
+    signature.classList.remove("signature3");
+    signature.classList.remove("signature4");
+    signature.classList.remove("signature5");
+    signature.classList.add("signature6");
+    
+    title.classList.remove("title1");
+    title.classList.remove("title2");
+    title.classList.remove("title3");
+    title.classList.remove("title4");
+    title.classList.remove("title5");
+    title.classList.add("title6");
+		
+		shi.classList.remove("shi1");
+    shi.classList.remove("shi2");
+    shi.classList.remove("shi3");
+    shi.classList.remove("shi4");
+    shi.classList.remove("shi5");
+    shi.classList.add("shi6");
+  };
+
+  function text_tC(){
+    signature.classList.remove("signature1");
+    signature.classList.remove("signature2");
+    signature.classList.remove("signature3");
+    signature.classList.remove("signature4");
+    signature.classList.remove("signature6");
+    signature.classList.add("signature5");
+    
+    title.classList.remove("title1");
+    title.classList.remove("title2");
+    title.classList.remove("title3");
+    title.classList.remove("title4");
+    title.classList.remove("title6");
+    title.classList.add("title5");
+		
+		shi.classList.remove("shi1");
+    shi.classList.remove("shi2");
+    shi.classList.remove("shi3");
+    shi.classList.remove("shi4");
+    shi.classList.remove("shi6");
+    shi.classList.add("shi5");
+  };
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	//以下區塊為移動程式
+	
+	function enableDragSort(listClass) {
+		const sortableLists = document.getElementsByClassName(listClass);
+		Array.prototype.map.call(sortableLists, (list) => {enableDragList(list)});
+	}
+
+	function enableDragList(list) {
+		Array.prototype.map.call(list.children, (item) => {enableDragItem(item)});
+	}
+
+	function enableDragItem(item) {
+		item.setAttribute('draggable', true)
+		item.ondrag = handleDrag;
+		item.ondragend = handleDrop;
+	}
+
+	function handleDrag(item) {
+		const selectedItem = item.target,
+		list = selectedItem.parentNode,
+		x = event.clientX,
+		y = event.clientY;
+  
+  	selectedItem.classList.add('drag-sort-active');
+  		let swapItem = document.elementFromPoint(x, y) === null ? selectedItem : document.elementFromPoint(x, y);
+  	
+  	if (list === swapItem.parentNode) {
+		swapItem = swapItem !== selectedItem.nextSibling ? swapItem : swapItem.nextSibling;
+		list.insertBefore(selectedItem, swapItem);
+  	}
+//		showtext();
+	}
+
+	function handleDrop(item) {
+		item.target.classList.remove('drag-sort-active');
+	}
+
+	(()=> {enableDragSort('drag-sort-enable')})();
+	
+//以上區塊為移動程式
+	
+//以下為下載圖片程式
+	
+	function block_capture() {
+		
+ 	html2canvas(document.querySelector("#outputbox")).then(function (canvas) {
+ 		a = document.createElement("a");
+ 		a.href = canvas
+ 		.toDataURL("image/jpeg", 0.92)
+ 		.replace("image/jpeg", "image/octet-stream");
+ 		a.download = "image.jpg";
+ 		a.click();
+ 	});
+		
+	}
+  
+  
+//  document.getElementById('video').play;
+	
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
